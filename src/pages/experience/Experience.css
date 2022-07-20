@@ -1,0 +1,128 @@
+/* .experience {
+    padding: 2rem;
+    border: 1 solid white;
+    position: fixed;
+    z-index: 4;
+} */
+
+.my-skills,
+.basic-knowledge,
+.language
+{
+    margin-bottom: 3rem;
+}
+
+
+.my-skills h5,
+.basic-knowledge h5,
+.language > h5
+{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-light);
+}
+
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+.skills-container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(44, 43, 43);
+}
+
+
+.skills-container div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+
+.skills-container div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.skill-content, .knowledge-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.skill-detail {
+    display: flex;
+    gap: 1rem;
+}
+
+.skill-detail-icon {
+    margin-top: 4px;
+    color: var(--color-primary);
+}
+
+
+
+.basic-knowledge-container-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.knowledge {
+    margin: 0 auto;
+    width: 37vw;
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(44, 43, 43);
+}
+
+
+.basic-knowledge-container div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: pointer;
+}
+
+.basic-knowledge-container div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+
+
+/* =================================== MEDIA RESPONSIVE =================================== */
+
+@media screen and (max-width: 1024px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .skill-content {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills-container {
+        gap: 1rem;
+    }
+
+    .skills-container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
