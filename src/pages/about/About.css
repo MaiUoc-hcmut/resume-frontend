@@ -28,7 +28,27 @@
     gap: 1.5rem;
 }
 
-.about-cards a {
+.edit-card-wrapper {
+    display: none;
+}
+
+.about-card-wrapper:hover + .edit-card-wrapper {
+    display: block;
+}
+
+.edit-card-wrapper div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.edit-card-wrapper div small {
+    font-size: 10px;    
+}
+
+
+.about-card-wrapper {
     background: var(--color-bg-variant);
     border: 1px solid rgb(44, 43, 43);
     border-radius: 1rem;
@@ -37,7 +57,7 @@
     transition: var(--transition);
 }
 
-.about-cards a:hover {
+.about-card-wrapper:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: pointer;

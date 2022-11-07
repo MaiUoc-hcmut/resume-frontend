@@ -3,7 +3,9 @@ import React from 'react';
 const ProjectCard = (props) => {
     return (
         <article className='project-card'>
-            <img src={props.image} alt="Project thumbnail" className='project-image' />
+            <div className="bg-image hover-zoom">
+                <img src={props.image} alt="Project thumbnail" className='project-image' />
+            </div>
             <h4>{props.name}</h4>
 
             <div className="demo">

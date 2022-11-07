@@ -7,6 +7,8 @@ import { AiOutlineProject } from 'react-icons/ai';
 import AboutCard from '../../components/AboutCard';
 import ReactReadMoreReadLess from "react-read-more-read-less";
 
+import EditOption from '../../components/EditOption';
+
 const About = (props) => {
 
 
@@ -24,27 +26,28 @@ const About = (props) => {
 
                 <div className="about-content">
                     <div className="about-cards">
-                        <a href="#experience">
+                        <a href="#experience" className='about-card-wrapper'>
                             <AboutCard 
                                 icon={<FaAward className='about-icon' />} 
                                 title='Experience' 
                                 detail='2 Month Intern at NOIS'
                             />
                         </a>
-                        <a href="#education">
+                        
+                        {/* <a href="#education" className='about-card-wrapper'>
                             <AboutCard 
                                 icon={<MdCastForEducation className='about-icon' />} 
                                 title='Education' 
                                 detail='Senior at HCMUT'
                             />
                         </a>
-                        <a href="#project">
+                        <a href="#project" className='about-card-wrapper'>
                             <AboutCard 
                                 icon={<AiOutlineProject className='about-icon' />} 
                                 title='Project' 
                                 detail='3 Project Completed' 
                             />
-                        </a>
+                        </a> */}
                     </div>
 
                     <p>
